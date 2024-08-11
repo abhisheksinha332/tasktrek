@@ -1,42 +1,97 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app{
+  display: grid;
+  grid-template-rows: 150px auto;
+  margin-top: 5%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app_main{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 8%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task_column{
+  background-color: blue;
+  width: 33.3%;
+  margin: 20px;;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.button_align{
+  float: left;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px;
 }
 
-.card {
-  padding: 2em;
+
+.app_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dcdcdc;
 }
 
-.read-the-docs {
-  color: #888;
+.task_input{
+  font-size: 20px;
+  font-weight: 500;
+  background: #f9f9f9;
+  color: black;
+  border: 1px solid #dfe3e6;
+  border-radius: 5px;
+  padding: 8px 2px;
+  margin-bottom: 15px;
+  width: 60%;
+  margin-left: 20%;
 }
+
+.tag{
+  margin-bottom: 15px;
+  width: 80%;
+  margin-left: 30%;
+  
+
+}
+
+.task_status{
+
+  float: right;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 20%;
+}
+
+.submit_button{
+  width: 100%;
+}
+.task_submit{
+  width: 40%;
+  margin: 10px 30%;
+  padding : 10px 2px;
+  background-color: cornflowerblue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task_submit ::hover{
+  width: 40%;
+  margin: 10px 30%;
+  padding : 10px 2px;
+  background-color: rgb(184, 22, 184);
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task_submit ::after{
+  width: 40%;
+  margin: 10px 30%;
+  padding : 10px 2px;
+  background-color: rgb(184, 22, 184);
+  border: 1px solid blue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
